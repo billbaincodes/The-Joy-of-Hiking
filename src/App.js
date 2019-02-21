@@ -1,17 +1,8 @@
 import React from 'react'
+import Home from './components/Home'
+import About from './components/About'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-const Home = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
-
-const About = () => (
-  <div>
-    <h2>Projects</h2>
-  </div>
-)
 
 const Topic = ({ match }) => (
   <div>
