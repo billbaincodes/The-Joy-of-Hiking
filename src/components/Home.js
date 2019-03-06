@@ -3,7 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <h2>Home</h2>
+      <h2>Welcome to Bill Bain Codes</h2>
+      <h3>Thanks for stopping on by!</h3>
     </div>
   );
 };
