@@ -1,8 +1,9 @@
 import React from "react";
-import Home from "./components/Home";
-import About from "./components/About";
+import Home from "./components/Home.js";
+import About from "./components/About.js";
 import Nav from "./components/Nav.js";
 import Blog from "./components/Blog.js"
+import Tech from './components/Tech.js'
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css'
 

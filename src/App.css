@@ -75,3 +75,31 @@ a:hover {
     transform: scale3d(1, 1, 1);
   }
 }
+
+.blog-img {
+  width: 100vw;
+}
+
+.tech-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tech-logo {
+  height:10vh;
+  margin-left: 2vw;
+}
+
+.tech-title {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.lax-title {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 2rem;
+  z-index: 1;
+}
