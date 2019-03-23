@@ -1,13 +1,19 @@
-import React from "react";
-import Tech from './Tech.js'
+import React, { Component } from "react";
+import Card from "./Card.js"
 
-const Home = () => {
-  return (
-    <div>
-      <h2>I am the home page</h2>
-      <Tech />
-    </div>
-  );
-};
+class Home extends Component {
+
+  render() {
+    return (
+      <div className="blog">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    );
+  }
+}
 
 export default Home;

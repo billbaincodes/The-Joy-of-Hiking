@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(68, 68, 68);
-  color: rgb(199, 199, 199);
+  background-color: #272824;
+  color: rgb(255, 255, 255);
 }
 
 a {
   text-decoration: none;
   transition: 0.3s;
-  color: rgb(87, 87, 87);
+  color: white;
 }
 
 a:hover {
@@ -17,7 +17,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(219, 219, 219);
+  background-color: #4e5049;
 }
 
 .nav-links {
@@ -34,6 +34,13 @@ a:hover {
   height: 100%;
 }
 
+input {
+  font-family: 'Roboto', serif;
+  font-size: 2rem;
+  background-color: #272824;
+  color: white;
+}
+
 .nav-links > div:hover {
   transform: translateY(-0.5rem);
 }
@@ -47,34 +54,6 @@ a:hover {
 
 .logo:hover {
   color: rgb(255, 255, 255);
-}
-
-@keyframes tada {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%,
-  20% {
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%,
-  60%,
-  80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
 }
 
 .blog-img {
@@ -119,15 +98,17 @@ a:hover {
 
 .card {
   display: flex;
-  background-color: rgb(77, 77, 77);
+  background-color: #1B645C;
   width: 75vw;
   margin: 1rem 1rem 1rem 1rem;
   padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.4rem rgb(46, 46, 46);
 }
 
-.card-header > h1 {
-  text-shadow: 1px 1px rgb(51, 51, 51);
-  margin: 0;
+.card-title {
+  font-size: 3rem;
+  display: inline;
 }
 
 .card-body {
@@ -139,6 +120,40 @@ a:hover {
 }
 
 .badge {
-  background-color: rgb(66, 66, 66);
-  
+  text-align:center;
+  padding: 0.1rem;
+  background-color: #8FCB9B;
+  font-style: bold;
+  border-radius: 0.5rem;
+}
+
+.card-icon {
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(182, 131, 38);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
