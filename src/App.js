@@ -1,7 +1,6 @@
 import React from "react";
 import Home from "./components/Home.js";
 import About from "./components/About.js";
-import Nav from "./components/Nav.js";
 import Blog from "./components/Blog.js"
 import Tech from './components/Tech.js'
 import Parallax2 from './components/parallax2'

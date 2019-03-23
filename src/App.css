@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(219, 219, 219);
-  background-image: url("https://lh3.googleusercontent.com/gAJF-qBxbYYbpgRsw7WbQ_-nmbxWXMAJZCpJqUqVBNAqdS9LvFp2blXE-i0led09dJks_vlODNd2K2LKEI-gEpocMk82xKJHuosBAZcgKtf0TfV2xz6bGWrse7oPgUnk5nTw9_qIStotoNUvfRjia8OeVdwJOTkYzkcYy8rxxUNvFZvrj4bg97Kg8grIu_MtX7eNFRBITkw5Eeyds7NqGLob5R5H2WTVgcmPF6CtSo_WqE18K_dHhwEOYIJnTjNsM8XeTa_EkEgL8HBfdWLDsbhwkJS-dmwVHIh-V7DW3t1kXOjRRVAQ1k8J7QNvm0-mV1mGLhIt8dUTqYntOZnv-FedfnHUUZDzgWEAc9lNJ2tdz1x7NjKqVbCkIdyB_L70M790eDoKcvjEK7wEgr0cW617C1hcFAUYDIeNgkGECV2gWlJMQjMWV4gu71aZL5NiXRgE5pCyWQhDVuXwo5F7Goe9bffQrsb1YetPEW42hCpA-4TnpP5cb51kEwPLKjuq-9CDJaM-gaoRo1fK-Sg2vYlfkuJga8iyWc273dJ_5BPVP-zYfo9WQcO1pzQDFi26Qal8qpnMQIsnjdf0YSOoXuIw38TViZE2BKEqkbVU8r2EJjDoppJTdPQgCHBayJ82uf2dQDvTwNr02LIc_ARpjeeM7RwUVtH3PxYoWSrVzCKv4Fsoq5We1AKNZkXpinQJDzIS8Il44rPrAqiDn0-lI3B3=w2322-h1452-no")
+  background-color: rgb(68, 68, 68);
+  color: rgb(199, 199, 199);
 }
 
 a {
@@ -115,4 +115,30 @@ a:hover {
   color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.60);
   margin-left: 3rem;
+}
+
+.card {
+  display: flex;
+  background-color: rgb(77, 77, 77);
+  width: 75vw;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
+}
+
+.card-header > h1 {
+  text-shadow: 1px 1px rgb(51, 51, 51);
+  margin: 0;
+}
+
+.card-body {
+  display: flex;
+}
+
+.card-body > img {
+  height: 30vh;
+}
+
+.badge {
+  background-color: rgb(66, 66, 66);
+  
 }

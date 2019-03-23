@@ -21,6 +21,13 @@ class Parallax3 extends Component {
       <div>
         <div id="scene">
           <div data-depth="0.1">
+          <img
+              className="hero"
+              src="https://lh3.googleusercontent.com/plJCooJyKE6fydpyfo6DhBmBsCZrShtEghcaXZBjQHWJXUSICM2UZbUmdSBsV6UTdkPXpQrWxFGhpVOxJZpV0VCRwq-B43vK2ZEXx-TyinFWmf5BcEGG0-JLqnUEJKs7VFY_OuTWQFy8iFKtvfqBUGdmjHno20iF--mHhwImmIhyqJcbpaHLqy2nh9qyxQhWDnnvTV-1i7fJCRFHQvsz-JWd7EIKRQKQJK81SLNa8a7mHP2zTkRjpG6WryKg82dOxUpjg-LyQ3-hxXCHQLyk12pqGfN5w39nZ3l7XHl3D0BuGf5Af3LEI7AstznJu6sWtaR9XxNcLIcr20OaiWVwRMhwtUvJBBEjYBlOrTJWURrxHjb_u6dncFO2Wr7chNiFaXH103vXBJ4PjR4R5eKeQTNtnFc5qLxc6E5G5IHyILQoogVrff5zL1dpuIV_CgK2KoWr4GS5DjskgUy8e49baI_ddmG6zbOFhXhDqUQkwcMUncR4mjj9Tfvfw30V9QX2AeT7--33HuxdXCd6KhD9jb9DUoEqMubzjT__OxwWdHfD9xMFQtyUA-l9Rf7X1Sev6-LT_P2Q5vtiBfE2tVG9bxyIBpc1C0HiadqA7mrym-Iibn6S9KR57ir69_4B3S1vMbXFZC5ydeJxn9kI864hQk4oh5GjJOI=w1500-h1000-no"
+              alt="node"
+            />
+          </div>
+          <div data-depth="0.1">
             <img
               className="hero"
               src="https://lh3.googleusercontent.com/plJCooJyKE6fydpyfo6DhBmBsCZrShtEghcaXZBjQHWJXUSICM2UZbUmdSBsV6UTdkPXpQrWxFGhpVOxJZpV0VCRwq-B43vK2ZEXx-TyinFWmf5BcEGG0-JLqnUEJKs7VFY_OuTWQFy8iFKtvfqBUGdmjHno20iF--mHhwImmIhyqJcbpaHLqy2nh9qyxQhWDnnvTV-1i7fJCRFHQvsz-JWd7EIKRQKQJK81SLNa8a7mHP2zTkRjpG6WryKg82dOxUpjg-LyQ3-hxXCHQLyk12pqGfN5w39nZ3l7XHl3D0BuGf5Af3LEI7AstznJu6sWtaR9XxNcLIcr20OaiWVwRMhwtUvJBBEjYBlOrTJWURrxHjb_u6dncFO2Wr7chNiFaXH103vXBJ4PjR4R5eKeQTNtnFc5qLxc6E5G5IHyILQoogVrff5zL1dpuIV_CgK2KoWr4GS5DjskgUy8e49baI_ddmG6zbOFhXhDqUQkwcMUncR4mjj9Tfvfw30V9QX2AeT7--33HuxdXCd6KhD9jb9DUoEqMubzjT__OxwWdHfD9xMFQtyUA-l9Rf7X1Sev6-LT_P2Q5vtiBfE2tVG9bxyIBpc1C0HiadqA7mrym-Iibn6S9KR57ir69_4B3S1vMbXFZC5ydeJxn9kI864hQk4oh5GjJOI=w1500-h1000-no"

@@ -22,8 +22,15 @@ class Parallax3 extends Component {
     return (
       <div>
         <div id="scene">
-          <div data-depth="0.5"
-                >
+        <div data-depth="0.3">
+            <img
+              className="hero"
+              src="https://lh3.googleusercontent.com/gAJF-qBxbYYbpgRsw7WbQ_-nmbxWXMAJZCpJqUqVBNAqdS9LvFp2blXE-i0led09dJks_vlODNd2K2LKEI-gEpocMk82xKJHuosBAZcgKtf0TfV2xz6bGWrse7oPgUnk5nTw9_qIStotoNUvfRjia8OeVdwJOTkYzkcYy8rxxUNvFZvrj4bg97Kg8grIu_MtX7eNFRBITkw5Eeyds7NqGLob5R5H2WTVgcmPF6CtSo_WqE18K_dHhwEOYIJnTjNsM8XeTa_EkEgL8HBfdWLDsbhwkJS-dmwVHIh-V7DW3t1kXOjRRVAQ1k8J7QNvm0-mV1mGLhIt8dUTqYntOZnv-FedfnHUUZDzgWEAc9lNJ2tdz1x7NjKqVbCkIdyB_L70M790eDoKcvjEK7wEgr0cW617C1hcFAUYDIeNgkGECV2gWlJMQjMWV4gu71aZL5NiXRgE5pCyWQhDVuXwo5F7Goe9bffQrsb1YetPEW42hCpA-4TnpP5cb51kEwPLKjuq-9CDJaM-gaoRo1fK-Sg2vYlfkuJga8iyWc273dJ_5BPVP-zYfo9WQcO1pzQDFi26Qal8qpnMQIsnjdf0YSOoXuIw38TViZE2BKEqkbVU8r2EJjDoppJTdPQgCHBayJ82uf2dQDvTwNr02LIc_ARpjeeM7RwUVtH3PxYoWSrVzCKv4Fsoq5We1AKNZkXpinQJDzIS8Il44rPrAqiDn0-lI3B3=w2322-h1452-no"
+              alt="node"
+              data-limit-x="1"
+            />
+          </div>
+          <div data-depth="0.3">
             <img
               className="hero"
               src="https://lh3.googleusercontent.com/JATWNzVpP4_Q9tHfrYzqWewzP0nTWuOcM4_CeQ2WpmgAfUzXFZfV-5le6ZDd5S4s2EzmwxacFtb7lKAOpLt2UqtTYVr0D1HKMzNmTQmzpMq3EWXz0SMpafbsyLAZo0XFGulfYfjcxKm9154COhkJdTH8MaUkKmEEN06D66p_trVJHPgrv8LlVi4JE1uPwcZvdk4o4-TlkgNFJtl1xTYvI0fLLVSxNrknk6K9NpfbmIt63iM2gWERYDrsZVIhoGGAU8YlmTcm11mtr8k0ds7ooMN8XvYpZ_RLI3UICgevLTan1OcsCpDqTdADw3VgS6-WHip48gzBEpOa2KMxjmaghXp_vu2kdhWu_tQo7yJTNASECu0-B0Rpm3IUxX3V-HSsjxKPP-rCISpXLRemc1KUOGEV4pQh_bia2Vw2KvtyyJM1d8AR1LzRDtzpukxbc7Z_E-GkRwvRxeI_og8WgNSAmLLUqs0BXPXm4xyDqMD8Ysn9j1-9Qq7rDP5c_nH9R_eNy8O59bPbYa0P97ZO4tvd-TCjmMMfhKFKtUKXgvB2m0XwdkTXVNPzBWcJZkTucNpi3Qcrptv2c9sEFHa3K6E0h_3lZzQEwKFATdxRL9PcWGaG31ckFsOraOOBrER36jNRP9pmMS3A-l4yLfUw1OhSbbA9xVNL_uk=w2316-h1452-no"
