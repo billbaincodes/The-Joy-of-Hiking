@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .nav {
@@ -39,10 +39,6 @@ input {
   font-size: 2rem;
   background-color: #272824;
   color: white;
-}
-
-.nav-links > div:hover {
-  transform: translateY(-0.5rem);
 }
 
 .logo {
@@ -117,6 +113,15 @@ input {
 
 .card-body > img {
   height: 30vh;
+  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+  filter: blur(2px);
+  transition: 0.9s;
+}
+
+.card-body > img:hover {
+  height: 30vh;
+  -webkit-filter: none;
+  filter: none;
 }
 
 .badge {
