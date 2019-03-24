@@ -162,3 +162,7 @@ input {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.navbar {
+  background-color: red;
+}
