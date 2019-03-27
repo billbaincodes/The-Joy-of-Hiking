@@ -164,13 +164,15 @@ input {
   visibility: visible;
 }
 
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+}
+
 .thumbnail > img {
   object-fit: cover;
   width:20rem;
   height:20rem;
   z-index: 0;
-}
-
-.thumbnail > h2 {
-  z-index: 1;
 }

@@ -8,6 +8,13 @@ class Home extends Component {
     return (
       <div className="blog">
         <Thumbnail />
+        <Thumbnail />
+        <Thumbnail />
+        <Thumbnail />
+        <Thumbnail />
+        <Thumbnail />
+        <Thumbnail />
+        
       </div>
     );
   }
