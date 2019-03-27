@@ -244,6 +244,10 @@ input {
 
 
 .parallax4 {
-  position: absolute;
-  top: 0;
+  /* position: static;
+  top: 0; */
+}
+
+.parallax-top {
+  margin-top: -5rem;
 }
