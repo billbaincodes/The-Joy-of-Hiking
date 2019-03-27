@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a className="navbar-brand" href="#">
         The Joy of Hiking
       </a>
@@ -77,6 +77,7 @@ const Nav = () => {
           </button>
         </form>
       </div>
+
     </nav>
   );
 };

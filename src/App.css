@@ -1,6 +1,7 @@
 body {
   background-color: #272824;
   color: rgb(255, 255, 255);
+  margin-top: 5rem;
 }
 
 a {
@@ -163,6 +164,13 @@ input {
   visibility: visible;
 }
 
-.navbar {
-  background-color: red;
+.thumbnail > img {
+  object-fit: cover;
+  width:20rem;
+  height:20rem;
+  z-index: 0;
+}
+
+.thumbnail > h2 {
+  z-index: 1;
 }
