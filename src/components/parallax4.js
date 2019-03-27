@@ -4,13 +4,6 @@ import Parallax from "parallax-js";
 
 class Parallax3 extends Component {
   componentDidMount() {
-    //Rellax code
-    // new Rellax(".rellax");
-    // var req = require.context("../assets", false, /.*\.png$/);
-    // req.keys().forEach(function(key) {
-    //   req(key);
-    // });
-
     //Parllax code
     var scene = document.getElementById("scene");
     var parallaxInstance = new Parallax(scene, {
@@ -20,7 +13,7 @@ class Parallax3 extends Component {
 
   render() {
     return (
-      <div>
+      <div className="parallax4">
         <div id="scene">
         <div data-depth="0.3">
             <img

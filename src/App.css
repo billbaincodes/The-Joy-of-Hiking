@@ -241,3 +241,9 @@ input {
     margin: 0 auto;
   }
 }
+
+
+.parallax4 {
+  position: absolute;
+  top: 0;
+}
