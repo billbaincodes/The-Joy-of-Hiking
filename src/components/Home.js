@@ -4,17 +4,12 @@ import Card from "./Card.js"
 
 class Home extends Component {
 
+
   render() {
     return (
       <div className="blog">
         <Thumbnail />
-        <Thumbnail />
-        <Thumbnail />
-        <Thumbnail />
-        <Thumbnail />
-        <Thumbnail />
-        <Thumbnail />
-        
+
       </div>
     );
   }

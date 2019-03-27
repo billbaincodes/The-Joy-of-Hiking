@@ -170,9 +170,74 @@ input {
   margin: 0 auto;
 }
 
-.thumbnail > img {
+.img__wrap {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.img__img {
   object-fit: cover;
   width:20rem;
   height:20rem;
-  z-index: 0;
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(70, 70, 70, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.1rem;
+
+  /* transition effect. not necessary */
+  transition: opacity .4s, visibility .4s;
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
 }
