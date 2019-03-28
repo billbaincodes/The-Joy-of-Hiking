@@ -168,13 +168,14 @@ input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
+  justify-items: center;
 }
 
 .img__wrap {
   position: relative;
   height: 20rem;
   width: 20rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .img__img {
@@ -244,10 +245,28 @@ input {
 
 
 .parallax4 {
-  /* position: static;
-  top: 0; */
+  position: relative;
+  z-index:0;
 }
 
 .parallax-top {
   margin-top: -5rem;
+}
+
+.splash-link {
+  position: relative;
+  margin-top: 50vh;
+  margin-left: 50vw;
+  border: 0.3rem solid white;
+  padding: 2rem;
+  font-size: 3rem;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  z-index:-1;
+}
+
+.splash-link:hover {
+  background-color: white;
+  color: red;
 }

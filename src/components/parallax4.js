@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import Rellax from "rellax";
 import Parallax from "parallax-js";
 
@@ -38,10 +39,13 @@ class Parallax3 extends Component {
               alt="node"
             />
           </div>
-          <h1 className="mist-title" data-depth="0.6">
+          <Link to="home" ><div className="splash-link" data-depth="0.6">
             The Joy of Hiking
-          </h1>
+          </div>
+          </Link>
+
         </div>
+
       </div>
     );
   }

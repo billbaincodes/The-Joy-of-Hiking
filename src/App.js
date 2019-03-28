@@ -18,6 +18,7 @@ const App = () => (
         <Nav />
       </Switch>
         <Route path="/home" component={Home} />
+        <Route path="/card" component={Card} />
     </div>
   </Router>
 );

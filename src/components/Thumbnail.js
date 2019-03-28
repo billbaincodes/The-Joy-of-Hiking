@@ -7,7 +7,7 @@ const Thumbnail = () => {
   };
 
   return (
-    <Link to="p4">
+    <Link to="card">
       <div onClick={logger} className="img__wrap">
         <img
           alt="hike-thumb"

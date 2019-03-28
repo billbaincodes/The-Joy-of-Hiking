@@ -35,7 +35,6 @@ class Card extends Component {
             <span className="badge">Distance:</span> Expert!
             <span className="badge">Elevation:</span> Expert!
           </div>
-
           <div>
             Tell her she looks thin. Oh yeah, good luck with that. Too much
             work. Let's burn it and say we dumped it in the sewer. So I really
