@@ -14,6 +14,7 @@ class Parallax3 extends Component {
 
   render() {
     return (
+      <div>
       <div className="parallax4">
         <div id="scene">
         <div className="parallax-top">
@@ -39,12 +40,14 @@ class Parallax3 extends Component {
               alt="node"
             />
           </div>
-          <Link to="home" ><div className="splash-link" data-depth="0.6">
+
+        </div>
+        
+      </div>
+      <Link to="home" ><div className="splash-link" data-depth="0.6">
             The Joy of Hiking
           </div>
           </Link>
-
-        </div>
 
       </div>
     );

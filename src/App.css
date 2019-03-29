@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-  color: rgb(0, 0, 0);
+  /* color: white; */
 }
 
 .nav {
@@ -243,9 +243,8 @@ input {
   }
 }
 
-
 .parallax4 {
-  position: relative;
+  position: absolute;
   z-index:0;
 }
 
@@ -254,19 +253,25 @@ input {
 }
 
 .splash-link {
-  position: relative;
-  margin-top: 50vh;
+  position: absolute;
+  margin-top: 40vh;
   margin-left: 50vw;
   border: 0.3rem solid white;
   padding: 2rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
+
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   transition: 1s;
-  z-index:-1;
+  z-index:1;
+  transition: 1s;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: screen;
+  font-weight: bolder;
 }
 
 .splash-link:hover {
-  background-color: white;
-  color: red;
+  mix-blend-mode: screen;
+  background-color: rgba(255, 255, 255, 0.89);
+  color: rgb(0, 0, 0);
 }
