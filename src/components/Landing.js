@@ -14,7 +14,7 @@ class Parallax3 extends Component {
 
   render() {
     return (
-      <div>
+      <div className="landing-page">
       <div className="parallax4">
         <div id="scene">
         <div className="parallax-top">

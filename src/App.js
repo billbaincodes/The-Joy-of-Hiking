@@ -17,7 +17,6 @@ const App = () => (
         <Route path="/home" component={Home} />
         <Route path="/card" component={Card} />
         <Route path="/about" component={About} />
-
     </div>
   </Router>
 );
