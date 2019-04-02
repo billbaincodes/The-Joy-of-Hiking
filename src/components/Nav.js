@@ -26,7 +26,7 @@ const Nav = () => {
               Home <span className="sr-only">(current)</span>
             </Link>
           </li>
-          <li className="nav-item dropdown">
+          {/* <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -52,14 +52,14 @@ const Nav = () => {
                 Flower
               </a>
             </div>
-          </li>
+          </li> */}
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="about">
               About
-            </a>
+              </Link>
           </li>
         </ul>
-        <form className="form-inline my-2 my-lg-0">
+        {/* <form className="form-inline my-2 my-lg-0">
           <input
             className="form-control mr-sm-2"
             type="search"
@@ -72,7 +72,7 @@ const Nav = () => {
           >
             Search
           </button>
-        </form>
+        </form> */}
       </div>
 
     </nav>
