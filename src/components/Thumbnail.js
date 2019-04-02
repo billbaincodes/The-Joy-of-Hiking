@@ -2,13 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Thumbnail = () => {
-  let logger = () => {
-    console.log("heyo");
-  };
 
   return (
     <Link to="card">
-      <div onClick={logger} className="img__wrap">
+      <div className="img__wrap">
         <img
           alt="hike-thumb"
           className="img__img"
