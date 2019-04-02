@@ -9,7 +9,7 @@ class Home extends Component {
   render() {
     return (
       <div className="blog">
-        <div class="bg">
+        {/* <div class="bg">
           <div class="mountain">
             <div class="mountain-top">
               <div class="mountain-cap-1" />
@@ -32,7 +32,7 @@ class Home extends Component {
             </div>
           </div>
           <div class="cloud" />
-        </div>
+        </div> */}
 
         <Thumbnail />
       </div>

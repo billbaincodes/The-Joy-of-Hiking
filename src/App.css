@@ -54,13 +54,6 @@ input {
 }
 
 
-.lax-title {
-  font-family: 'Dancing Script', cursive;
-  color: white;
-  font-size: 2rem;
-  z-index: 1;
-}
-
 .hero {
   width: 100vw;
 }
@@ -71,13 +64,16 @@ input {
   width: 60vw;
   margin: 0 auto;
   padding: 1rem;
-  border-radius: 0.3rem;
-  box-shadow: 0.1rem 0.1rem 0.4rem rgb(46, 46, 46);
 }
 
 .card-title {
   font-size: 3rem;
   display: inline;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
 }
 
 .card-body {
@@ -97,44 +93,12 @@ input {
   margin: 0 auto;
   padding: 1rem;
   border-radius: 0.3rem;
-  box-shadow: 0.1rem 0.1rem 0.4rem rgb(46, 46, 46);
-}
-
-.badge {
-  text-align:center;
-  padding: 0.1rem;
-  background-color: #8FCB9B;
-  font-style: bold;
-  border-radius: 0.5rem;
+  border: 1px solid rgb(223, 223, 223);
 }
 
 .card-icon {
   height: 2rem;
   margin-left: 1rem;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: rgb(182, 131, 38);
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
 
 .blog {
@@ -144,6 +108,7 @@ input {
   justify-items: center;
 }
 
+/* Display name on thumbnail hover */
 .img__wrap {
   position: relative;
   height: 20rem;
@@ -198,7 +163,7 @@ input {
 }
 
 
-
+/*Landing Page Styles */
 .parallax4 {
   position: absolute;
   z-index:0;
@@ -233,6 +198,8 @@ input {
   color: rgb(0, 0, 0);
 }
 
+
+
 .about-page {
   display: flex;
   flex-direction: column;
@@ -260,14 +227,60 @@ input {
   padding: 1rem;
 }
 
-
-
 .carousel img {
   width: 80vw;
   object-fit: contain;
 }
 
+.tooltipz {
+  display:inline-block;
+  position:relative;
+  text-align:left;
+}
 
+.tooltipz .bottom {
+  top:2.6rem;
+  left:67%;
+  transform:translate(-50%, 0);
+  padding:10px;
+  color:#444444;
+  background-color:#EEEEEE;
+  border-radius:8px;
+  position:absolute;
+  z-index:9;
+  box-sizing:border-box;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltipz:hover .bottom {
+  visibility:visible; opacity:1;
+}
+
+.tooltipz .bottom i {
+  position:absolute;
+  bottom:100%;
+  left:50%;
+  margin-left:-12px;
+  width:24px;
+  height:12px;
+  overflow:hidden;
+}
+
+.tooltipz .bottom i::after {
+  content:'';
+  position:absolute;
+  width:12px;
+  height:12px;
+  left:50%;
+  transform:translate(-50%,50%) rotate(45deg);
+  background-color:#EEEEEE;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+.tooltip-list {
+  
+}
 
 /* Fix the parallax for mobile/tablet display */
 @media only screen and (max-width: 1160px) {  
@@ -322,10 +335,11 @@ input {
     width: 100vw;
   }
 
+
+
   .card {
     width: 100vw;
     margin-bottom: 0rem;
-    box-shadow: 0 0 0 0;
     border-top: none;
   }
 
@@ -346,13 +360,26 @@ input {
   .link-list {
     width: 90vw;  
   }
+
+  .card-head {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-bottom: 0.4rem;
+  }
+
+  .card-icon {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
 }
 
 
 
-.bg{
+
+/* .bg{
   overflow:hidden;
-  /* background:#c7e6fa; */
+  background:#c7e6fa;
   position: absolute;
   top:0;
   left:0;
@@ -427,7 +454,7 @@ left: 50px;
 content: '';
 left: 25px;
 top: -10px;
-}
+} */
 
 .thumb {
   position: relative;

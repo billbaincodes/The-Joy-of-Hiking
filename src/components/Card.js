@@ -9,32 +9,57 @@ class Card extends Component {
     return (
       <div className="card-page">
         <div className="card">
-          <div>
+          <div className="card-head">
             <div className="card-title">Herman Lake</div>
-            <p>
-              Herman Lake is a glacial lake featuring beaitful wildflowers
-              during the late spring and early summer months. The trail begins
-              at the Herman Gulch trailhead, which is located about one hour
-              west of downtown Denver. The trailhead is located directly off the
-              highway in a paved parking lot and is accessible with any vehicle.
-              The out and back hike stretches roughly 8 miles and gains nearly
-              2,000 feet. The Herman Gulch trailhead also offers access to Mount Parnassus.
-              </p>
-              <p>
-              Mount Parnassus is a high mountain summit in the Front
-              Range of the Rocky Mountains of North America. The 13,580-foot
-              (4,139 m) thirteener is located in Arapaho National Forest, 5.4
-              miles (8.7 km) west-northwest (bearing 288°) of the Town of Silver
-              Plume in Clear Creek County, Colorado, United States. Mount
-              Parnassus sits east of the Continental Divide in the Front Range
-              of the Rocky Mountains. The summit is located near Interstate
-              70. The higher Bard Peak, at 13,647 feet (4,160 m), sits
-              nearby, and the closest major town is Silver Plume,
-              Colorado. It is also in close proximity to Woods Mountain,
-              Mount Sniktau, Engelmann Peak, Robeson Peak, and Pettingell
-              Peak. This level of variety and challenge makes Herman Gulch a great spot for families and peak baggers alike.
-            </p>
+            <div className="tooltip-list">
+            <div className="tooltipz">
+              <img className="card-icon" src={flowerLogo} alt="flower icon" />
+              <div className="bottom">
+                Wildflowers
+                <i />
+              </div>
+            </div>
+            <div className="tooltipz">
+              <img className="card-icon" src={mountainLogo} alt="mtn icon" />
+              <div className="bottom">
+                Mountain&nbsp;Views
+                <i />
+              </div>
+            </div>
+            <div className="tooltipz">
+              <img className="card-icon" src={riverLogo} alt="river icon" />
+              <div className="bottom">
+                River&nbsp;/&nbsp;Creek
+                <i />
+              </div>
+            </div>
+            </div>
+
           </div>
+          <p>
+            Herman Lake is a glacial lake featuring beaitful wildflowers during
+            the late spring and early summer months. The trail begins at the
+            Herman Gulch trailhead, which is located about one hour west of
+            downtown Denver. The trailhead is located directly off the highway
+            in a paved parking lot and is accessible with any vehicle. The out
+            and back hike stretches roughly 8 miles and gains nearly 2,000 feet.
+            The Herman Gulch trailhead also offers access to Mount Parnassus.
+          </p>
+          <p>
+            Mount Parnassus is a high mountain summit in the Front Range of the
+            Rocky Mountains of North America. The 13,580-foot (4,139 m)
+            thirteener is located in Arapaho National Forest, 5.4 miles (8.7 km)
+            west-northwest (bearing 288°) of the Town of Silver Plume in Clear
+            Creek County, Colorado, United States. Mount Parnassus sits east of
+            the Continental Divide in the Front Range of the Rocky Mountains.
+            The summit is located near Interstate 70. The higher Bard Peak, at
+            13,647 feet (4,160 m), sits nearby, and the closest major town is
+            Silver Plume, Colorado. It is also in close proximity to Woods
+            Mountain, Mount Sniktau, Engelmann Peak, Robeson Peak, and
+            Pettingell Peak. This level of variety and challenge makes Herman
+            Gulch a great spot for families and peak baggers alike.
+          </p>
+
           <div
             id="carouselExampleControls"
             class="carousel slide"
