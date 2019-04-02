@@ -24,11 +24,7 @@ const About = () => {
         the solitude of being alone on the trail make for a combination that few
         other activities can offer. I hope to bring some of the beauty of nature
         to you and hopefully give you some good advice and suggestions on where
-        and how to start hiking yourself. If you have any trails or hikes you
-        want featured on the site, please use the links below to contact me.
-        Hopefully you enjoy the images and feel inspired to take a hike
-        yourself. I will also probably convert this site into a portfolio for my
-        projects, once I have more projects completed.
+        and how to start hiking yourself.
       </p>
       <h4>Web Development</h4>
       <p>
