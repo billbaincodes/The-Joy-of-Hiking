@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="about-page">
       <img src={headshot} alt="photo of author" />
-      <h2>About</h2>
+      <h2>About Me</h2>
       <p>
         I grew up hiking the foothills of the Appalachian mountains and have
         recently graduated to the Rockies. I believe hiking is one of the most

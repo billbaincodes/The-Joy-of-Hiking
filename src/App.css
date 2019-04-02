@@ -301,13 +301,12 @@ input {
     margin-bottom: 1rem;
   }
 
-
 }
 
 @media only screen and (max-width: 675px) {
 
   body {
-    margin-top:2rem;
+    margin-top:4rem;
   }
   .blog {
     display: grid;
@@ -327,7 +326,25 @@ input {
     width: 100vw;
     margin-bottom: 0rem;
     box-shadow: 0 0 0 0;
+    border-top: none;
+  }
 
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .about-page > img {
+    width: 60vw;
+    height: 60vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .link-list {
+    width: 90vw;  
   }
 }
 
