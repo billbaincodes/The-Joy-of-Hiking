@@ -34,15 +34,15 @@ const About = () => {
       <div className="link-list">
         <div>
           <a target="blank" href="https://www.linkedin.com/in/billbaincodes/">
-            My LinkedIn
+            LinkedIn
           </a>
         </div>
         <div>
-          <a target="blank" href="https://github.com/billbaincodes/">My GitHub</a>
+          <a target="blank" href="https://github.com/billbaincodes/">GitHub</a>
           </div>
           <div>
           <a href="mailto:billbaincodes@gmail.com">
-            Email Me
+            Email
           </a>
           </div>
       </div>
