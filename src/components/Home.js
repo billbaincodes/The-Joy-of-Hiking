@@ -33,7 +33,7 @@ class Home extends Component {
               );
             })
           ) : (
-            "hey"
+            "Waking up server. Please wait a few minutes."
           )}
 
       </div>

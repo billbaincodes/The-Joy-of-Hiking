@@ -4,11 +4,6 @@ import MtnBadge from "../components/badges/MtnBadge.js";
 import RiverBadge from "../components/badges/RiverBadge.js";
 import WaterfallBadge from "../components/badges/WaterfallBadge.js";
 
-import waterfallLogo from "../assets/01-river.png";
-import flowerLogo from "../assets/04-flower.png";
-import mountainLogo from "../assets/03-mountain.png";
-import riverLogo from "../assets/02-sea.png";
-
 class Card extends Component {
   render() {
     return (
@@ -80,8 +75,8 @@ class Card extends Component {
           <h3>Info</h3>
           <p>Distance: {this.props.location.state.trailData.distance} miles</p>
           <p>Elevation: {this.props.location.state.trailData.elevation} feet</p>
-          <p>Park: {this.props.location.state.trailData.park} </p>
-          <p>Trailhead: {this.props.location.state.trailData.trailhead}</p>
+          <p>Park: {this.props.location.state.trailData.park_id} </p>
+          <p>Trailhead: {this.props.location.state.trailData.trailhead_id}</p>
           <p>
             Price:{" "}
             {this.props.location.state.trailData.price === 0
