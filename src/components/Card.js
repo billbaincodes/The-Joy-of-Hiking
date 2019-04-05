@@ -1,10 +1,38 @@
 import React, { Component } from "react";
+import CarouselItem from "../components/CarouselItem.js";
 import FlowerBadge from "../components/badges/FlowerBadge.js";
 import MtnBadge from "../components/badges/MtnBadge.js";
 import RiverBadge from "../components/badges/RiverBadge.js";
 import WaterfallBadge from "../components/badges/WaterfallBadge.js";
 
 class Card extends Component {
+  state = {
+    gallery: [],
+    loaded: false
+  };
+
+  componentDidMount() {
+    this.galleryFetcher();
+  }
+
+  galleryFetcher = () => {
+    fetch(
+      `http://localhost:3000/gallery/${this.props.location.state.trailData.id}`
+    )
+      .then(response => response.json())
+      .then(json => this.setState({ gallery: json.gallery, loaded: true }));
+  };
+
+  galleryBuilder = () => {
+    let remainingImages = this.state.gallery.slice(1)
+    console.log(remainingImages)
+    return remainingImages.map(image => {
+    return <CarouselItem image={image} />
+    })
+  }
+
+
+
   render() {
     return (
       <div className="card-page">
@@ -23,33 +51,41 @@ class Card extends Component {
             </div>
           </div>
           <p>{this.props.location.state.trailData.description}</p>
+
           <div
             id="carouselExampleControls"
             className="carousel slide"
             data-ride="carousel"
           >
             <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  className="d-block w-100"
-                  src="https://i.imgur.com/GLw8DyW.jpg"
-                  alt="First slide"
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  className="d-block w-100"
-                  src="https://i.imgur.com/smOxHAJ.jpg"
-                  alt="Second slide"
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  className="d-block w-100"
-                  src="https://i.imgur.com/lYCxvk1.jpg"
-                  alt="Third slide"
-                />
-              </div>
+              {this.state.loaded ? (
+                <div className="carousel-item active">
+                  <img
+                    className="d-block w-100"
+                    src={this.state.gallery[0].imgURL}
+                    alt="trail"
+                  />
+                </div>
+
+              )
+              : (
+                "Fetching Gallery"
+              )}
+              {this.state.loaded && (
+                this.galleryBuilder()
+              )}
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
             <a
               className="carousel-control-prev"
@@ -92,6 +128,14 @@ class Card extends Component {
 export default Card;
 
 /*
+
+<div className="carousel-item active">
+  <img
+    className="d-block w-100"
+    src={this.state.gallery[0].imgURL}
+    alt="trail"
+  />
+</div>
 
 <div className="tooltip">
   <img className="card-icon" src={riverLogo} alt="river-logo" />

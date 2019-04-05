@@ -4,7 +4,7 @@ import headshot from "../assets/trailbill.jpg";
 const About = () => {
   return (
     <div className="about-page">
-      <img src={headshot} alt="photo of author" />
+      <img src={headshot} alt="site author" />
       <h2>About Me</h2>
       <p>
         I grew up hiking the foothills of the Appalachian mountains and have

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Thumbnail from "./Thumbnail";
-import RMNPThumbnail from "../components/RMNPThumbnail";
 
 class Home extends Component {
   state = {
