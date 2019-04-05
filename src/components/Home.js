@@ -12,7 +12,7 @@ class Home extends Component {
   }
 
   dataFetcher = () => {
-    fetch("http://localhost:3000/trail")
+    fetch("https://joyofhiking.herokuapp.com/trail")
       .then(response => response.json())
       .then(json => this.setState({ trailList: json.trails, loaded: true }));
   };
@@ -20,9 +20,6 @@ class Home extends Component {
   render() {
     return (
       <div className="blog">
-        {/* <Thumbnail />
-        <RMNPThumbnail /> */}
-
         {this.state.loaded ? (
             this.state.trailList.map(trail => {
               return (

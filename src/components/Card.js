@@ -17,7 +17,7 @@ class Card extends Component {
 
   galleryFetcher = () => {
     fetch(
-      `http://localhost:3000/gallery/${this.props.location.state.trailData.id}`
+      `https://joyofhiking.herokuapp.com/gallery/${this.props.location.state.trailData.id}`
     )
       .then(response => response.json())
       .then(json => this.setState({ gallery: json.gallery, loaded: true }));
