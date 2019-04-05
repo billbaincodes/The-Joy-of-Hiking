@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Thumbnail = () => {
+const Thumbnail = ({trailData}) => {
 
   return (
-    <Link to="card">
+    <Link to={{ pathname: `/card`, state: { trailData : trailData} }}> 
       <div className="img__wrap">
         <img
           alt="hike-thumb"
           className="img__img"
-          src="https://i.imgur.com/R7IT2MD.jpg"
+          src={trailData.thumbURL}
         />
         <div className="img__description_layer">
-          <p className="img__description">Herman Lake</p>
+          <p className="img__description">{trailData.name}</p>
         </div>
       </div>
     </Link>
