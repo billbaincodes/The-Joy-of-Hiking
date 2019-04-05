@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import FlowerBadge from "../components/badges/FlowerBadge.js";
+import MtnBadge from "../components/badges/MtnBadge.js";
+import RiverBadge from "../components/badges/RiverBadge.js";
+import WaterfallBadge from "../components/badges/WaterfallBadge.js";
+
 import waterfallLogo from "../assets/01-river.png";
 import flowerLogo from "../assets/04-flower.png";
 import mountainLogo from "../assets/03-mountain.png";
@@ -16,24 +20,14 @@ class Card extends Component {
             </div>
             <div className="tooltip-list">
               {this.props.location.state.trailData.flower && <FlowerBadge />}
-              <div className="tooltipz">
-                <img className="card-icon" src={mountainLogo} alt="mtn icon" />
-                <div className="bottom">
-                  Mountain&nbsp;Views
-                  <i />
-                </div>
-              </div>
-              <div className="tooltipz">
-                <img className="card-icon" src={riverLogo} alt="river icon" />
-                <div className="bottom">
-                  River&nbsp;/&nbsp;Creek
-                  <i />
-                </div>
-              </div>
+              {this.props.location.state.trailData.mtn && <MtnBadge />}
+              {this.props.location.state.trailData.river && <RiverBadge />}
+              {this.props.location.state.trailData.waterfall && (
+                <WaterfallBadge />
+              )}
             </div>
           </div>
           <p>{this.props.location.state.trailData.description}</p>
-
           <div
             id="carouselExampleControls"
             className="carousel slide"
@@ -92,7 +86,7 @@ class Card extends Component {
             Price:{" "}
             {this.props.location.state.trailData.price === 0
               ? "Free"
-              : this.props.location.state.trailData.price}
+              : `$${this.props.location.state.trailData.price}`}
           </p>
         </div>
       </div>
