@@ -4,7 +4,8 @@ import Thumbnail from "./Thumbnail";
 class Home extends Component {
   state = {
     trailList: [],
-    loaded: false
+    loaded: false,
+    searchValue: ''
   };
 
   componentDidMount() {
@@ -17,21 +18,18 @@ class Home extends Component {
       .then(json => this.setState({ trailList: json.trails, loaded: true }));
   };
 
+  searchFilter = () => {
+    console.log("buttttttz")
+  }
+
   render() {
     return (
       <div className="blog">
-        {this.state.loaded ? (
-            this.state.trailList.map(trail => {
-              return (
-                <Thumbnail
-                  trailData={trail}
-                />
-              );
+        {this.state.loaded
+          ? this.state.trailList.map(trail => {
+              return <Thumbnail trailData={trail} />;
             })
-          ) : (
-            "Waking up server. Please wait a few minutes."
-          )}
-
+          : "Waking up server. Please wait a few minutes."}
       </div>
     );
   }

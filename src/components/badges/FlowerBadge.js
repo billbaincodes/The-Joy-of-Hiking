@@ -1,5 +1,5 @@
 import React from "react";
-import flowerLogo from '../../assets/04-flower.png'
+import flowerLogo from "../../assets/iconFlower.png"
 
 const FlowerBadge = () => {
   return (

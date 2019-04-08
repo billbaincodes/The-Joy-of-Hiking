@@ -1,5 +1,5 @@
 import React from "react";
-import riverLogo from "../../assets/02-sea.png";
+import riverLogo from "../../assets/iconRiver.png";
 
 const RiverBadge = () => {
   return (

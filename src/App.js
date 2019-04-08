@@ -2,7 +2,6 @@ import React from "react";
 import Nav from "./components/Nav.js";
 import Home from "./components/Home.js";
 import Card from "./components/Card.js";
-import RMNPCard from "./components/RMNPCard"
 import About from "./components/About.js";
 import Landing from "./components/Landing";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
@@ -17,7 +16,6 @@ const App = () => (
       </Switch>
         <Route path="/home" component={Home} />
         <Route path="/card" component={Card} />
-        <Route path="/RMNPcard" component={RMNPCard} />
         <Route path="/about" component={About} />
     </div>
   </Router>

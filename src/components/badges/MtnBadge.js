@@ -1,5 +1,5 @@
 import React from "react";
-import mtnLogo from "../../assets/03-mountain.png";
+import mtnLogo from "../../assets/iconMountain.png";
 
 const MtnBadge = () => {
   return (

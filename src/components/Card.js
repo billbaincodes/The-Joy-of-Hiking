@@ -4,6 +4,8 @@ import FlowerBadge from "../components/badges/FlowerBadge.js";
 import MtnBadge from "../components/badges/MtnBadge.js";
 import RiverBadge from "../components/badges/RiverBadge.js";
 import WaterfallBadge from "../components/badges/WaterfallBadge.js";
+import RedrockBadge from "../components/badges/RedrockBadge.js"
+import LakekBadge from "../components/badges/LakeBadge.js"
 
 class Card extends Component {
   state = {
@@ -25,7 +27,6 @@ class Card extends Component {
 
   galleryBuilder = () => {
     let remainingImages = this.state.gallery.slice(1)
-    console.log(remainingImages)
     return remainingImages.map(image => {
     return <CarouselItem image={image} />
     })
@@ -45,6 +46,8 @@ class Card extends Component {
               {this.props.location.state.trailData.flower && <FlowerBadge />}
               {this.props.location.state.trailData.mtn && <MtnBadge />}
               {this.props.location.state.trailData.river && <RiverBadge />}
+              {this.props.location.state.trailData.redrock && <RedrockBadge />}
+              {this.props.location.state.trailData.lake && <LakekBadge />}
               {this.props.location.state.trailData.waterfall && (
                 <WaterfallBadge />
               )}

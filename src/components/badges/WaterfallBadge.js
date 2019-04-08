@@ -1,5 +1,5 @@
 import React from "react";
-import waterfallLogo from "../../assets/01-river.png";
+import waterfallLogo from "../../assets/iconWaterfall.png";
 
 const WaterfallBadge = () => {
   return (
