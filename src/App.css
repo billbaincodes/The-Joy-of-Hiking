@@ -286,6 +286,10 @@ th {
   width: 300px;
 }
 
+.table-price {
+  width: 50px;
+}
+
 /* Query Parameters*/
 
 @media only screen and (max-width: 1160px) {  
@@ -410,6 +414,22 @@ th {
     transform:translate(-30%,50%) rotate(45deg);
     background-color:#EEEEEE;
     box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  }
+
+  .search-page {
+    width: 100vw;
+    font-size: 0.75rem;
+  }
+
+  .img__description_layer {
+    background: rgba(70, 70, 70, 0.4);
+    color: rgb(255, 255, 255);
+    visibility: visible;
+    opacity: 0.9;
+  }
+
+  .img__description {
+    transform: translateY(0rem);
   }
 }
 
