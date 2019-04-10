@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const TrailTable = ({ trailData }) => {
   return (
     <div>
-      I am the trail table
       <table className="table table-hover">
         <thead>
           <tr>
@@ -17,9 +16,7 @@ const TrailTable = ({ trailData }) => {
         <tbody>
 
 
-          {
-            trailData ?
-            
+          {trailData ?
             trailData.map(trail => (
             <tr>
               <td>
@@ -32,11 +29,11 @@ const TrailTable = ({ trailData }) => {
 
               <td>{trail.park_id}</td>
               <td>{trail.trailhead_id}</td>
-              <td>{trail.price}</td>
+              <td>{trail.price === 0 ? "Free" : `$${trail.price}`}</td>
             </tr>
           )) :
 
-          <p>no results found!</p>
+          <p>No results found!</p>
           
           
           }

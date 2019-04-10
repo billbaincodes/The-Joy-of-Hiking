@@ -4,8 +4,8 @@ import FlowerBadge from "../components/badges/FlowerBadge.js";
 import MtnBadge from "../components/badges/MtnBadge.js";
 import RiverBadge from "../components/badges/RiverBadge.js";
 import WaterfallBadge from "../components/badges/WaterfallBadge.js";
-import RedrockBadge from "../components/badges/RedrockBadge.js"
-import LakekBadge from "../components/badges/LakeBadge.js"
+import RedrockBadge from "../components/badges/RedrockBadge.js";
+import LakekBadge from "../components/badges/LakeBadge.js";
 
 class Card extends Component {
   state = {
@@ -19,20 +19,20 @@ class Card extends Component {
 
   galleryFetcher = () => {
     fetch(
-      `https://joyofhiking.herokuapp.com/gallery/${this.props.location.state.trailData.id}`
+      `https://joyofhiking.herokuapp.com/gallery/${
+        this.props.location.state.trailData.id
+      }`
     )
       .then(response => response.json())
       .then(json => this.setState({ gallery: json.gallery, loaded: true }));
   };
 
   galleryBuilder = () => {
-    let remainingImages = this.state.gallery.slice(1)
+    let remainingImages = this.state.gallery.slice(1);
     return remainingImages.map(image => {
-    return <CarouselItem image={image} />
-    })
-  }
-
-
+      return <CarouselItem image={image} />;
+    });
+  };
 
   render() {
     return (
@@ -69,26 +69,10 @@ class Card extends Component {
                     alt="trail"
                   />
                 </div>
-
-              )
-              : (
+              ) : (
                 "Fetching Gallery"
               )}
-              {this.state.loaded && (
-                this.galleryBuilder()
-              )}
-
-
-
-
-
-
-
-
-
-
-
-
+              {this.state.loaded && this.galleryBuilder()}
             </div>
             <a
               className="carousel-control-prev"
@@ -112,7 +96,12 @@ class Card extends Component {
         </div>
         <div className="card-stats">
           <h3>Info</h3>
-          <p>Distance: {this.props.location.state.trailData.distance} miles</p>
+          <p>
+            Distance:{" "}
+            {this.props.location.state.trailData.distance < 1
+              ? `${this.props.location.state.trailData.distance} mile`
+              : `${this.props.location.state.trailData.distance} mile`}
+          </p>
           <p>Elevation: {this.props.location.state.trailData.elevation} feet</p>
           <p>Park: {this.props.location.state.trailData.park_id} </p>
           <p>Trailhead: {this.props.location.state.trailData.trailhead_id}</p>
