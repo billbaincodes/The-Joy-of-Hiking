@@ -6,7 +6,7 @@ const RedrockBadge = () => {
     <div className="tooltipz">
       <img className="card-icon" src={redrockLogo} alt="red rock icon" />
       <div className="bottom">
-        Red&nbsp;rock
+        Red&nbsp;Rock
         <i />
       </div>
     </div>
