@@ -51,7 +51,9 @@ class SearchResult extends Component {
                   <th scope="col">Name</th>
                   <th scope="col">Park</th>
                   <th scope="col">Trailhead</th>
-                  <th scope="col">Price</th>
+                  <th className="table-price" scope="col">
+                    Price
+                  </th>
                 </tr>
               </thead>
             </table>

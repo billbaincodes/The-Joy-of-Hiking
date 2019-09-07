@@ -63,16 +63,17 @@ class Nav extends Component {
               </a>
             </div>
           </li> */}
+          <li className="nav-item">
+              <Link className="nav-link" to="search">
+                Search
+              </Link>
+            </li>
             <li className="nav-item">
               <Link className="nav-link" to="about">
                 About
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="search">
-                Search
-              </Link>
-            </li>
+
           </ul>
         </div>
       </nav>

@@ -100,7 +100,7 @@ class Card extends Component {
             Distance:{" "}
             {this.props.location.state.trailData.distance < 1
               ? `${this.props.location.state.trailData.distance} mile`
-              : `${this.props.location.state.trailData.distance} mile`}
+              : `${this.props.location.state.trailData.distance} miles`}
           </p>
           <p>Elevation: {this.props.location.state.trailData.elevation} feet</p>
           <p>Park: {this.props.location.state.trailData.park_id} </p>

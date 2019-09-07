@@ -16,7 +16,9 @@ const TrailTable = ({ trailData }) => {
           </tr>
         </thead>
         <tbody>
-          {trailData ? (
+          {!trailData || !trailData.length ? (
+            <p>No results found!</p>
+          ) : (
             trailData.map(trail => (
               <tr>
                 <td>
@@ -29,8 +31,6 @@ const TrailTable = ({ trailData }) => {
                 <td>{trail.price === 0 ? "Free" : `$${trail.price}`}</td>
               </tr>
             ))
-          ) : (
-            <p>No results found!</p>
           )}
         </tbody>
       </table>
